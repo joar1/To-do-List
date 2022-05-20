@@ -36,7 +36,7 @@ deleteAllBtn.addEventListener('click', () =>{
 
 
 
-// Where to magic happens, adds a list, and a delete button.
+// Where to magic happens, adds a list, and a delete button and class to style them in css.
 function addToDo(){
    const toDo = document.createElement('li')
    const toDoText = document.createElement('p')
