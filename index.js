@@ -20,9 +20,10 @@ toDoInput.addEventListener('keydown', (e) =>{
 //The add-to-do button which adds to the list and clears the input.
 addToDoBtn.addEventListener('click', () =>{
    if(toDoInput.value.match(/^ *$/))return
-   console.log("Adding ", toDoInput.value.toUpperCase(), " to the list", currentTime)
+   console.log("Adding ", toDoInput.value.toUpperCase(), " to the list")
    addToDo()
    toDoInput.value = ""
+   toDoInput.focus()
 })
 
 
@@ -41,8 +42,9 @@ function addToDo(){
    const toDoText = document.createElement('p')
    const deleteBtn = document.createElement('button')
    toDoText.textContent = toDoInput.value
-   deleteBtn.textContent = "DELETE"
+   deleteBtn.textContent = "Delete"
    deleteBtn.addEventListener('click', () => toDo.remove())
+   deleteBtn.classList.add('deleteBtn', 'p')
    toDoList.append(toDo)
    toDo.append(toDoText, deleteBtn)
 }

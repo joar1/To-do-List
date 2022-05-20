@@ -11,31 +11,49 @@ input:hover{
    transform:scale(1.05);
 }
 #toDoBtn{
-   padding:6px 6px;
+   padding:5px 5px;
+   border-radius:5px;
    border:none;
    background:green;
    color:white;
-   text-shadow: 0px 0px 3px black;
    font-weight:bolder;
    cursor:pointer;
 }
-
 #toDoBtn:hover{
    transform:scale(1.09);
 }
 
 #deleteAllBtn{
-   margin-left:10px;
-   padding:6px 6px;
+   margin-left:72px;
+   padding:5px 5px;
+   border-radius:5px;
    margin-top:10px;
    font-weight:bold;
    background:red;
    color:white;
-   text-shadow: 0px 0px 3px black;
    border:none;
    cursor:pointer;
 }
-
 #deleteAllBtn:hover{
+   transform:scale(1.09);
+}
+p{
+   color:blue;
+   display:inline-block;
+   width:300px;
+   margin-right:10px;
+   margin-bottom:5px;
+}
+
+.deleteBtn{
+   padding:5px 5px;
+   border-radius:10px;
+   font-weight:bold;
+   background:red;
+   color:white;
+   border:none;
+   cursor:pointer;
+}
+.deleteBtn:hover{
    transform:scale(1.09);
 }
