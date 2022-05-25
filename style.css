@@ -1,11 +1,15 @@
 body{
    margin-left:0;
    padding:0;
-   background-color:snow;
+   background-color:white;
 }
+
 input{
-   margin:0px 10px;
+   margin-right:10px;
+   margin-left:40px;
    padding:5px 5px;
+   border:2px black solid;
+   outline:none;
 }
 input:hover{
    transform:scale(1.05);
@@ -24,7 +28,7 @@ input:hover{
 }
 
 #deleteAllBtn{
-   margin-left:72px;
+   margin-left:10px;
    padding:5px 5px;
    border-radius:5px;
    margin-top:10px;
@@ -36,13 +40,6 @@ input:hover{
 }
 #deleteAllBtn:hover{
    transform:scale(1.09);
-}
-p{
-   color:blue;
-   display:inline-block;
-   width:300px;
-   margin-right:10px;
-   margin-bottom:5px;
 }
 
 .deleteBtn{
@@ -56,4 +53,22 @@ p{
 }
 .deleteBtn:hover{
    transform:scale(1.09);
+}
+
+p{
+   color:blue;
+   display:inline-block;
+   overflow-wrap: break-word;
+   width:250px;
+   padding:5px 5px;
+   margin-right:10px;
+   margin-bottom:5px;
+}
+
+li{
+   list-style:none;
+   border-bottom: solid 2px black;
+   padding-bottom:1px;
+   margin-top:1px;
+   width:325px;
 }
